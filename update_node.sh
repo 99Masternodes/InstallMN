@@ -1,8 +1,8 @@
 #!/bin/bash
 
-TARBALLURL="https://github.com/99Masternodes/NMN/releases/download/1.0.0.0/ubuntu16-daemon.tar.gz"
-TARBALLNAME="ubuntu16-daemon.tar.gz"
-NMNVERSION="1.0.0.0"
+TARBALLURL="https://github.com/99Masternodes/NMN/releases/download/v1.1.0.0/ubuntu16.04-daemon.zip"
+TARBALLNAME="ubuntu16-daemon.zip"
+NMNVERSION="1.1.0.0"
 
 clear
 echo "This script will update your masternode to version $NMNVERSION"
@@ -31,5 +31,4 @@ clear
 read -p "Please wait at least 5 minutes for the wallet to load, then press any key to continue." -n1 -s
 clear
 echo "Starting masternode..." # TODO: Need to wait for wallet to load before starting...
-nmn-cli startmasternode local false
 nmn-cli masternode status
