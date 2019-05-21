@@ -7,11 +7,11 @@ if [[ $EUID -eq 0 ]]; then
 fi
 
 # Set these to change the version of NMN to install
-TARBALLURL="https://github.com/99Masternodes/NMN/releases/download/v1.0.0.1/ubuntu16.04-daemon.zip"
+TARBALLURL="https://github.com/99Masternodes/NMN/releases/download/v1.1.0.0/ubuntu16.04-daemon.zip"
 TARBALLNAME="ubuntu16.04-daemon.zip"
-NMNVERSION="1.0.0.1"
+NMNVERSION="1.1.0.0"
 # Get our current IP
-EXTERNALIP=`dig +short myip.opendns.com @resolver1.opendns.com`
+EXTERNALIP=$(curl -s4 api.ipify.org)
 clear
 
 STRING1="Make sure you double check before hitting enter! Only one shot at these!"
@@ -88,7 +88,6 @@ nmnd -daemon
 sleep 60
 nmn-cli stop
 clear
-cd ~/.nmn && wget https://github.com/99Masternodes/NMN/releases/download/v1.0.0.1/bootstrap.zip && unzip bootstrap.zip
 
 #Setting up coin
 clear
