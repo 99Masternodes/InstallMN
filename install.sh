@@ -7,9 +7,9 @@ if [[ $EUID -eq 0 ]]; then
 fi
 
 # Set these to change the version of NMN to install
-TARBALLURL="https://github.com/99Masternodes/NMN/releases/download/v1.1.0.0/ubuntu16.04-daemon.zip"
+TARBALLURL="https://github.com/99Masternodes/NMN/releases/download/v1.2.0.0/ubuntu16.04-daemon.zip"
 TARBALLNAME="ubuntu16.04-daemon.zip"
-NMNVERSION="1.1.0.0"
+NMNVERSION="1.2.0.0"
 # Get our current IP
 EXTERNALIP=$(curl -s4 api.ipify.org)
 clear
