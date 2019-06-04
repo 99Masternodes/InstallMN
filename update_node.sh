@@ -1,8 +1,8 @@
 #!/bin/bash
 
-TARBALLURL="https://github.com/99Masternodes/NMN/releases/download/v1.1.0.0/ubuntu16.04-daemon.zip"
+TARBALLURL="https://github.com/99Masternodes/NMN/releases/download/v1.2.0.0/ubuntu16.04-daemon.zip"
 TARBALLNAME="ubuntu16-daemon.zip"
-NMNVERSION="1.1.0.0"
+NMNVERSION="1.2.0.0"
 
 clear
 echo "This script will update your masternode to version $NMNVERSION"
